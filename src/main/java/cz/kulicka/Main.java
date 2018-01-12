@@ -11,30 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        String fileName = "input.json";
 
-        File jsonFile = new File("input.json");
-
-        final String[] content = {""};
-
-        //read file into stream, try-with-resources
-//        try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-//
-//            stream.forEach((v)-> content[0] +=v);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-
-        ObjectMapper objectMapper = new ObjectMapper();
-
-        Market result = null;
-        try {
-             result = objectMapper.readValue(jsonFile, Market.class);
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
-        }
-
-        Market v = result;
 
 //        try {
 //

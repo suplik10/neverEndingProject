@@ -1,4 +1,4 @@
-package cz.kulicka;
+package cz.kulicka.entities;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;

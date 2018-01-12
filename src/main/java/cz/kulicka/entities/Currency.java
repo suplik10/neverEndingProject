@@ -1,4 +1,4 @@
-package cz.kulicka;
+package cz.kulicka.entities;
 
 import java.util.HashMap;
 import java.util.Map;
