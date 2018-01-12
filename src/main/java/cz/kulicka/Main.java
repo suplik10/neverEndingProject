@@ -2,6 +2,9 @@ package cz.kulicka;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import cz.kulicka.rest.connectors.AbstractRestApiConnector;
+import cz.kulicka.utils.Mapper;
+import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,8 +12,9 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    static Logger log = Logger.getLogger(Main.class);
 
+    public static void main(String[] args) throws IOException {
 
 
 //        try {
@@ -46,4 +50,5 @@ public class Main {
 //
 //        }
     }
+
 }

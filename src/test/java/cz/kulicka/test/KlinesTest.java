@@ -3,27 +3,26 @@ package cz.kulicka.test;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import cz.kulicka.entities.AllPrice;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
+import java.util.ArrayList;
 
-public class AllPriceTest {
+public class KlinesTest {
 
     @Test
-    public void allPriceJsonMapper() throws IOException {
+    public void klinesJsonMapper() throws IOException {
 
-        File jsonFile = new File("allPrices.json");
+        File jsonFile = new File("klines.json");
 
         ObjectMapper objectMapper = new ObjectMapper();
 
-        List<AllPrice> result = null;
+        ArrayList<String> result = null;
         try {
-            result = objectMapper.readValue(jsonFile, new TypeReference<List<AllPrice>>(){});
+            result = objectMapper.readValue(jsonFile, new TypeReference<ArrayList<ArrayList<String>>>() {
+            });
         } catch (JsonMappingException e) {
             e.printStackTrace();
         }
